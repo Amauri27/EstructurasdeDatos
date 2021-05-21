@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="inventario.js"></script>
+    <script src="producto.js"></script>
+    <script src="objs.js"></script>
+    
+    <h1>Inventario</h1><br>
+
+<label for="nombre">Nombre: </label><br>
+<input type="text" id="nombre"><br><br>
+
+<label for="nombre">Cantidad: </label><br>
+<input type="text" id="cantidad"><br><br>
+
+<label for="nombre">Precio: </label><br>
+<input type="text" id="precio"><br><br>
+
+<label for="nombre">ID: </label><br>
+<input type=number id="id"><br><br>
+
+<button onclick="Agregar()" id="nuevo">Agregar</button> <br><br>
+
+ID a buscar o eliminar<br>
+<input type="text" id="textoabuscar">
+<br><br>
+
+<button onclick="Buscar()" >Buscar</button><br><br>
+<button onclick="Listar()">Listar</button>
+<button onclick="Eliminar()">Eliminar</button>
+
+<p id="resultado"></p>
+<br>
+<br>
+<p id="lista"></p>
+    
+</body>
+</html>
