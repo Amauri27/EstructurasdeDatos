@@ -26,11 +26,11 @@ class arbolBinario
     {
         if(this.raiz==null)
         {
-            this.raiz=n
+            this.raiz=n;
         }
         else
         {
-            this.Agregate(n,this.raiz)
+            this.Agregate(n,this.raiz);
         }
     }
     Agregate(nuevo,nodoX)
@@ -50,11 +50,11 @@ class arbolBinario
         {
             if(nodoX.hijoDerecho==null)
             {
-                nodoX.hijoDerecho=nuevo
+                nodoX.hijoDerecho=nuevo;
             }
             else
             {
-                this.Agregate(nuevo,nodoX.hijoDerecho)
+                this.Agregate(nuevo,nodoX.hijoDerecho);
             }
         }
     }
@@ -75,7 +75,7 @@ class arbolBinario
         {
             this.InorderRec(nodoX.hijoIzquierdo);
         }
-        console.log(nodoX.info());
+        console.log(nodoX);
         if(nodoX.hijoDerecho!=null)
         {
             this.InorderRec(nodoX.hijoDerecho);
@@ -156,12 +156,14 @@ inventario.Agregar(i);
 inventario.Agregar(j);
 inventario.Agregar(k);
 
-const chalk = require('chalk')
+const chalk = require('chalk');
 
 const log = console.log;
 
 log(chalk.green(inventario.InOrder()));
 
 log(chalk.magenta(inventario.PreOrder()));
+
+log(chalk.blue(inventario.PosOrder()));
 
 
